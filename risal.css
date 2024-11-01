@@ -1,0 +1,266 @@
+a[icon ^="sf"] {
+  padding: 0 2px 1px 20px;
+  background: transparent url(sf.gif) left center no-repeat;
+  text-decoration: none;
+}
+
+a[icon ^="f"] {
+  padding: 0 2px 1px 20px;
+  background: transparent url(f.gif) left center no-repeat;
+  text-decoration: none;
+  color: green;
+}
+
+a[icon ^="f"]:hover {
+  color: black;
+}
+
+#ristable {
+	width: 800px;
+	padding: 0;
+	margin: 0;
+}
+
+caption {
+	padding: 0 0 5px 0;
+	width: 700px;	 
+	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+}
+
+th {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(bg_header.jpg) no-repeat;
+}
+
+th.nobg {
+	border-top: 0;
+	border-left: 0;
+	border-right: 1px solid #C1DAD7;
+	background: none;
+}
+
+td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+
+
+td.alt {
+	background: #F5FAFA;
+	color: #797268;
+}
+
+th.spec {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #fff url(bullet1.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+}
+
+th.specalt {
+	border-left: 1px solid #C1DAD7;
+	border-top: 0;
+	background: #f5fafa url(bullet2.gif) no-repeat;
+	font: bold 10px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #797268;
+}
+
+.rissdiv {
+/*margin:0 auto;*/
+width:800px;
+padding:10px;
+}
+
+.cxform p{
+width: 300px;
+clear: left;
+margin: 0;
+padding: 5px 0 8px 0;
+padding-left: 155px; /*width of left column containing the label elements*/
+border-top: 1px dashed gray;
+height: 1%;
+}
+
+.cxform label{
+font-weight: bold;
+float: left;
+margin-left: -155px; /*width of left column*/
+width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.cxform input[type="text"]{ /*width of text boxes. IE6 does not understand this attribute*/
+width: 230px;
+}
+
+.cxform input[type="file"]{
+border: solid;
+}
+
+.tagx p{
+font: Garamond, Georgia, serif;
+color:gray; 
+font-style:italic;
+}
+
+.tagx span{
+font: Garamond, Georgia, serif;
+color:gray; 
+font-style:italic;
+}
+
+/* Start Sliding jQuery */
+
+.accordion {
+	width: 800px;
+	border-bottom: solid 1px #c4c4c4;
+}
+.accordion span.tajuk {
+	float: left;
+	width: 800px;
+	background: #e9e7e7 url(arrow-square.gif) no-repeat right -51px;
+	padding: 7px 15px;
+	margin: 0;
+	font: bold 120%/100% Arial, Helvetica, sans-serif;
+	border: solid 1px #c4c4c4;
+	border-bottom: none;
+	cursor: pointer;
+}
+.accordion span.tajuk:hover {
+	float: left;
+	width: 800px;
+	background-color: #e3e2e2;
+}
+.accordion span.tajuk.active {
+	float: left;
+	width: 800px;
+	background-position: right 5px;
+}
+.accordion span.isi {
+	width: 800px;
+	float: left;
+	background: #f7f7f7;
+	margin: 0;
+	padding: 10px 15px 20px;
+	border-left: solid 1px #c4c4c4;
+	border-right: solid 1px #c4c4c4;
+	border-bottom: solid 1px #c4c4c4;
+}
+/* End Sliding jQuery */
+
+#kakiku {
+    float: left;
+    position : absolute;
+    bottom : 20px;
+    height : 40px;
+    margin-top : 40px;
+}
+
+/*#popbox {
+font: Arial, Helvetica, sans-serif;
+width : 130px;
+height : 170px;
+padding: 10px 15px 20px;
+border: solid 1px #c4c4c4;
+}*/
+
+#captcha-wrap{
+	border:solid #870500 1px;
+	width:270px;
+	-webkit-border-radius: 10px;
+	float:left;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background:#870500;
+	text-align:left;
+	padding:3px;
+	margin-top:3px;
+	height:120px;
+	margin-left:20px;
+}
+#captcha-wrap .captcha-box{
+	-webkit-border-radius: 7px;
+	background:#fff;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	text-align:center;
+	border:solid #fff 1px;
+}
+#captcha-wrap .text-box{
+	-webkit-border-radius: 7px;
+	background:#ffdc73;
+	-moz-border-radius: 7px;
+	width:140px;
+	height:69px;
+	float:left;
+	margin:4px;
+	border-radius: 7px;
+	text-align:center;
+	border:solid #ffdc73 1px;
+}
+ 
+#captcha-wrap .text-box input{ width:120px;}
+#captcha-wrap .text-box label{
+	 color:#000000;
+	 font-family: helvetica,sans-serif;
+	 font-size:12px;	
+	 width:150px;
+	 padding-top:3px; 
+	 padding-bottom:3px; 
+}
+#captcha-wrap .captcha-action{
+	float:right; width:117px; 
+	background:url(logos.jpg) top right no-repeat; 
+	height:44px; margin-top:20px;
+}
+#captcha-wrap  img#captcha-refresh{
+	margin-top:9px;
+	border:solid #333333 1px;
+	margin-right:6px;
+	cursor:pointer;
+}
+
+
+* html .threepxfix{
+margin-left: 3px;
+}
+
+tr.d0 td {
+	font: bold 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #4f6b72;
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	border-top: 1px solid #C1DAD7;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 6px 6px 6px 12px;
+	background: #CAE8EA url(bg_header.jpg) no-repeat;
+	/*background-color: #C7BBBB; color: black; font-weight:bold;*/
+}
+
+tr.d1 td {
+	border-right: 1px solid #C1DAD7;
+	border-bottom: 1px solid #C1DAD7;
+	background: #fff;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+	/*background-color: white; color: black;*/
+}
+
+tr.d1:hover td { 
+background: #ffff9d; 
+color: #000;
+}
+
